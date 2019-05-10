@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>模拟打字效果</title>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+ #top {
+	height:auto;
+	width:100%;
+	margin:auto;
+</head>
+</style>
+<body style=background-color:#DDA0DD text="#000000">
+<p id="top"></p>
+<div style="display:none" id="w">
+    劳仑衣普桑，认至将指点效则机，最你更枝。想极整月正进好志次回总般，段然取向使张规军证回，世市总李率英茄持伴。用阶千样响领交出，器程办管据家元写，名其直金团。化达书据始价算每百青，金低给天济办作照明，取路豆学丽适市确。如提单各样备再成农各政，设头律走克美技说没，体交才路此在杠。
+
+    响育油命转处他住有，一须通给对非交矿今该，花象更面据压来。与花断第然调，很处己队音，程承明邮。常系单要外史按机速引也书，个此少管品务美直管战，子大标蠢主盯写族般本。农现离门亲事以响规，局观先示从开示，动和导便命复机李，办队呆等需杯。见何细线名必子适取米制近，内信时型系节新候节好当我，队农否志杏空适花。
+
+    又我具料划每地，对算由那基高放，育天孝。派则指细流金义月无采列，走压看计和眼提问接，作半极水红素支花。果都济素各半走，意红接器长标，等杏近乱共。层题提万任号，信来查段格，农张雨。省着素科程建持色被什，所界走置派农难取眼，并细杆至志本。
+
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lec- tus vestibulum urna fringilla ul- trices.
+	
+	你真有耐心，看到这里了👍，哈哈哈～
+</div>
+<script>
+var index = 0;
+var word = document.getElementById("w").innerHTML;
+console.log(word)
+
+function type() {
+    document.getElementById("top").innerText = word.substring(0, index++);
+}
+setInterval(type, 200);
+</script>
+
+</body>
+</html>
